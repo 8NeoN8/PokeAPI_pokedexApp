@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+body{
+    background-color:rgb(173, 255, 228);
+    position: relative;
+}
+h1{
+    text-align: center;
+    margin: 10px;
+}
+.poke-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: red 2px solid;
+    padding: 5px;
+    text-align: center;
+}
+
+.container-card{
+    display: inline;
+}
+.hidden{
+    display: none;
+}
+
+.close-mark{
+    z-index: 60;
+    width: 50px;
+    height: 50px;
+    background-image: url(./xmark.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 20px;
+    left: 20px;   
+}
+
+.detail-background{
+    padding: 0;
+    margin: 0;
+    width: 99vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 50;
+    position: sticky;
+    bottom: 0;  
+}
+
+.detail-foreground{
+    width: 100%;
+    max-width: 1000px;
+    min-width: 800px;
+    height: 100%;
+    background-color: red;
+    z-index: 55;
+    position: relative;
+    margin: 50px auto;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.detail-foreground *{
+    background-color: white;
+}
+
+.sprite-options{
+    border: 2px dotted brown;
+    display: flex;
+    justify-content: center;
+    height: 170px;
+    margin: auto;
+    margin-top: 20px; 
+    padding: 5px;;
+    width: 80%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.sprite-options *{
+    margin: auto;
+}
+
+.info{
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    border: 2px dotted blue;
+    margin: auto;
+    overflow-y: hidden;
+    width: 90%;
+    height: 50%;
+    background-color: whitesmoke;
+    justify-content: space-around;
+}
+
+.spr-img{
+    border: red 2px solid;
+    border-radius: 50%;
+    height: 150px;
+    background-color: aqua;
+}
+
+
+.moves>*{
+    width: 100%;
+    padding: 1px;
+    margin-bottom: 4px;
+    background-color: rgb(235, 219, 219);
+    border-radius: 15px;
+    font-size: 15px;
+}
+.moves{
+    padding: 5px;
+    height: 100%;
+    width: 48%;
+    max-height: 250px;
+    overflow-y: scroll;
+    border-radius: 15px;
+    border: red 2px solid;
+    overflow-x: hidden;
+}
+.moves::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    
+}
+.moves::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 0, 0);
+    border-radius: 45%;
+    margin: 5px;
+}
+.stats{
+    width: 48%;
+    padding: 4px;
+    border-radius: 15px;
+    border: red 2px solid;
+}
+.stats>*{
+    width: 100%;
+    text-align:end;
+    margin-bottom: 4px;
+    background-color: rgb(235, 219, 219);
+    border-radius: 15px;
+}
+
+.button-shiny{
+    height: 50px;
+    width: 70px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: red 2px solid;
+
+}
+
+.container-card{
+    border-radius: 15px;
+    border: red 2px solid;
+    background-color: whitesmoke;
+}
+
+.extended-info{
+    display: flex;
+    border-radius: 15px;
+    border: red 2px solid;
+    width: 48%;
+    justify-content: space-around;
+}
+
+.basic-info{
+    padding: 5px;
+    width: 48%;
+    height: 150%;
+    max-height: 250px;
+    border-radius: 15px;
+    border: red 2px solid;
+    
+}
+.basic-info>*{
+    margin-bottom: 4px;
+    background-color: rgb(235, 219, 219);
+    border-radius: 15px;
+}
+.types{
+    background: none;
+}
+.types>*{
+    margin-bottom: 4px;
+    margin-top: 4px;
+    background-color: rgb(235, 219, 219);
+    border-radius: 15px;
+   
+}
